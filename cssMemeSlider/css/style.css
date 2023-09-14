@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 20px;
 }
 /* #ece284; */
 .page {
@@ -13,7 +14,6 @@ html {
   --middle: #ffa500;
   --dark: #8b6f20;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
 }
 
 
@@ -22,14 +22,9 @@ CONTAINER
 ***********************/
 .container {
   margin: 0 auto;
-  width: 1000px;
-}
-
-@media (max-width: 1000px) {
-  .container {
-    width: 100%;
-    min-width: 320px;
-  }
+  width: 90%;
+  max-width: 51rem;
+  min-width: 20rem;
 }
 
 
@@ -37,7 +32,7 @@ CONTAINER
 HEADER
 ***********************/
 .header {
-  height: 60px;
+  height: 3rem;
   background-color: var(--dark);
 }
 
@@ -75,20 +70,199 @@ MAIN
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 6rem);
+  max-height: calc(100vh - 6rem);
   background-color: var(--light);
 }
 
-.meme__img {
-  width: 640px;
+.meme__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  width: 34rem;
 }
+
+.meme__input {
+  display: none;
+}
+
+
+/***********************
+IMGS
+***********************/
+.meme__imgs {
+  overflow: hidden;
+}
+
+.meme__imgs-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  transition: all 0.5s ease-in;
+}
+
+.meme__img {
+  display: block;
+  width: 32rem;
+  max-height: 24rem;
+  height: auto;
+}
+
+#img1:checked ~ .meme__imgs .meme__imgs-wrapper {
+  margin-left: 0;
+}
+#img2:checked ~ .meme__imgs .meme__imgs-wrapper {
+  margin-left: -34rem;
+}
+
+#img3:checked ~ .meme__imgs .meme__imgs-wrapper {
+  margin-left: -68rem;
+}
+
+#img4:checked ~ .meme__imgs .meme__imgs-wrapper {
+  margin-left: -102rem;
+}
+
+#img5:checked ~ .meme__imgs .meme__imgs-wrapper {
+  margin-left: -136rem;
+}
+/***********************
+/IMGS
+***********************/
+
+.meme__control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 5rem;
+  background-color: #ff7;
+}
+
+
+/***********************
+TEXT
+***********************/
+.meme__texts {
+  overflow: hidden;
+}
+
+.meme__texts-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500%;
+  line-height: 150%;
+  transition: all 0.5s ease-in;
+}
+
+.meme__text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #f9f;
+}
+
+#img1:checked ~ .meme__control .meme__texts-wrapper {
+  margin-left: 0;
+}
+
+#img2:checked ~ .meme__control .meme__texts-wrapper {
+  margin-left: -100%;
+}
+
+#img3:checked ~ .meme__control .meme__texts-wrapper {
+  margin-left: -200%;
+}
+
+#img4:checked ~ .meme__control .meme__texts-wrapper {
+  margin-left: -300%;
+}
+
+#img5:checked ~ .meme__control .meme__texts-wrapper {
+  margin-left: -400%;
+}
+/***********************
+/TEXT
+***********************/
+
+
+/***********************
+BTNS
+***********************/
+.meme__btns {
+  background-color: #fff;
+}
+.meme__btns-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.meme__btn {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.meme__circle {
+  cursor: pointer;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 0.02rem solid var(--dark);
+  transition:  all 0.3s ease-in;
+}
+
+.meme__circle:hover {
+  background-color:  var(--middle);
+  border: 0.02rem solid var(--middle);
+}
+
+.meme__circle:active {
+  background-color: var(--dark);
+  border: 0.02rem solid var(--dark);
+}
+
+#img1:checked ~ .meme__control .circle1 {
+  background-color: var(--dark);
+  border: 0.02rem solid var(--dark);
+}
+
+#img2:checked ~ .meme__control .circle2 {
+  background-color: var(--dark);
+  border: 0.02rem solid #8176AF;
+}
+
+#img3:checked ~ .meme__control .circle3 {
+  background-color: var(--dark);
+  border: 0.02rem solid #8176AF;
+}
+
+#img4:checked ~ .meme__control .circle4 {
+  background-color: var(--dark);
+  border: 0.02rem solid #8176AF;
+}
+
+#img5:checked ~ .meme__control .circle5 {
+  background-color: var(--dark);
+  border: 0.02rem solid #8176AF;
+}
+/***********************
+/BTNS
+***********************/
+
 
 /***********************
 FOOTER
 ***********************/
 .footer {
-  height: 60px;
+  height: 3rem;
   background-color: var(--dark);
 }
 
@@ -125,3 +299,6 @@ FOOTER
 .footer-logo:hover {
   filter: invert(22%) sepia(61%) saturate(4249%) hue-rotate(359deg) brightness(103%) contrast(104%);
 }
+/***********************
+/FOOTER
+***********************/

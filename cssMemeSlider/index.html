@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Ivan Kashirin">
   <meta name="copyright" content="200TB Web Studio">
-  <meta name="description" content="random-game ivan kashirin application">
-  <meta name="keywords" content="random-game, rsschool">
-  <title>frontend200tb random-game</title>
+  <meta name="description" content="css meme slider frontend200tb ivan kashirin application">
+  <meta name="keywords" content="css meme slider, rsschool">
+  <title>frontend200tb css meme slider</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.png">
-  <script src="js/index.js" defer></script>
 </head>
 
 <body>
   <div class="page">
 
 
+    <!-- header -->
     <header class="header">
       <div class="container">
         <div class="header-content">
@@ -25,11 +25,22 @@
           <logo class="logo-right"></logo>
         </div>
       </div>
-    </header> 
+    </header>
+    <!-- /header -->
 
 
     <main class="main">
-      <div class="meme__slider">
+      <div class="meme__slider container">
+
+        <!-- input -->
+        <input class="meme__input" type="radio" name="radio" id="img1" checked>
+        <input class="meme__input" type="radio" name="radio" id="img2">
+        <input class="meme__input" type="radio" name="radio" id="img3">
+        <input class="meme__input" type="radio" name="radio" id="img4">
+        <input class="meme__input" type="radio" name="radio" id="img5">
+        <!-- /input -->
+
+        <!-- imgs -->
         <div class="meme__imgs">
           <div class="meme__imgs-wrapper">
             <img class="meme__img" src="./assets/img/mem1.jpg" alt="first image">
@@ -39,41 +50,51 @@
             <img class="meme__img" src="./assets/img/mem5.jpg" alt="fifth image">
           </div>
         </div>
+        <!-- /imgs -->
 
-        <div class="meme__texts">
-          <div class="meme__texts-wrapper">
-            <div class="meme__text">One does not simply understand all memes</div>
-            <div class="meme__text">Not sure if wrong password or wrong username</div>
-            <div class="meme__text">You tried your best and failed miserably. The lesson is, never try</div>
-            <div class="meme__text">My mom trying to delete my games. Me watching her delete the desktop icons</div>
-            <div class="meme__text">My english skills</div>
-          </div>
-        </div>
+        <div class="meme__control">
 
-        <div class="meme__btns">
-          <div class="meme__btns-wrapper">
-            <div class="meme__btn btn-active">
-                <div class="meme__circle"></div>
-            </div>
-            <div class="meme__btn">
-              <div class="meme__circle"></div>
-            </div>
-            <div class="meme__btn">
-              <div class="meme__circle"></div>
-            </div>
-            <div class="meme__btn">
-              <div class="meme__circle"></div>
-            </div>
-            <div class="meme__btn">
-              <div class="meme__circle"></div>
+          <!-- text -->
+          <div class="meme__texts">
+            <div class="meme__texts-wrapper">
+              <div class="meme__text">One does not simply understand all memes</div>
+              <div class="meme__text">Not sure if wrong password or wrong username</div>
+              <div class="meme__text">You tried your best and failed miserably. The lesson is, never try</div>
+              <div class="meme__text">My mom trying to delete my games. Me watching her delete the desktop icons</div>
+              <div class="meme__text">My english skills</div>
             </div>
           </div>
+          <!-- /text -->
+
+          <!-- btns -->
+          <div class="meme__btns">
+            <div class="meme__btns-wrapper">
+              <label for="img1" class="meme__btn">
+                <div class="meme__circle circle1"></div>
+              </label>
+              <label for="img2" class="meme__btn">
+                <div class="meme__circle circle2"></div>
+              </label>
+              <label for="img3" class="meme__btn">
+                <div class="meme__circle circle3"></div>
+              </label>
+              <label for="img4" class="meme__btn">
+                <div class="meme__circle circle4"></div>
+              </label>
+              <label for="img5" class="meme__btn">
+                <div class="meme__circle circle5"></div>
+              </label>
+            </div>
+          </div>
+          <!-- /btns -->
+
         </div>
 
       </div>
     </main>
 
-    
+
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -83,6 +104,7 @@
         </div>
       </div>
     </footer>
+    <!-- /footer -->
 
   </div>
 </body>
