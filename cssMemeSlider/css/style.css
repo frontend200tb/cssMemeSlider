@@ -54,10 +54,10 @@ HEADER
 
 .logo-right {
   margin: 5px 0;
-  width: 150px;
+  width: 320px;
   height: 50px;
   text-align: right;
-  background-image: url("../assets/svg/squares.svg");
+  background-image: url("../assets/svg/css_meme_slider.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -295,7 +295,7 @@ FOOTER
   display: block;
   width: 400px;
   height: 50px;
-  background-image: url("../assets/svg/2022frontend200tb.svg");
+  background-image: url("../assets/svg/2023frontend200tb.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -319,4 +319,20 @@ FOOTER
 }
 /***********************
 /FOOTER
+***********************/
+
+
+/***********************
+ценные замечания
+Логотип выполнен на сайте Cool Text Generator
+Алгоритм работы
+1. Открыть сайт https://maketext.io/
+2. В поле First, type some texts to start with
+ввести текст css meme slider
+и нажать кнопку Make Text Cooler
+3. В секции Then, pick an effect you'd like to use
+выбрать эффект для текста
+4. Для длинного текста © 2023 frontend200tb
+выбрать Font Size 50 чтобы он не превышал ширины экспортируемой области
+5. Экспортировать в svg
 ***********************/
