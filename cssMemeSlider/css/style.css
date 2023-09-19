@@ -44,18 +44,18 @@ HEADER
 
 /*** Header - Logo ***/
 .logo-left {
-  margin: 5px 0;
-  width: 320px;
-  height: 50px;
+  margin: 0.25rem 0;
+  width: 16rem;
+  height: 2.5rem;
   background-image: url("../assets/svg/200tbgamestudio.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .logo-right {
-  margin: 5px 0;
-  width: 320px;
-  height: 50px;
+  margin: 0.25rem 0;
+  width: 16rem;
+  height: 2.5rem;
   text-align: right;
   background-image: url("../assets/svg/css_meme_slider.svg");
   background-size: contain;
@@ -293,8 +293,8 @@ FOOTER
 /*** Footer - Logo ***/
 .footer-github {
   display: block;
-  width: 400px;
-  height: 50px;
+  width: 20rem;
+  height: 2.5rem;
   background-image: url("../assets/svg/2023frontend200tb.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -306,9 +306,9 @@ FOOTER
 
 .footer-logo {
   display: block;
-  margin: 5px 0;
-  width: 135px;
-  height: 50px;
+  margin: 0.4rem 0;
+  width: 6.75rem;
+  height: 2.5rem;
   background-image: url("../assets/svg/rss.svg");
   background-size: contain;
   background-repeat: no-repeat;
